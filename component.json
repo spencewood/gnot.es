@@ -1,11 +1,16 @@
 {
-  "name": "gnot-es",
-  "version": "0.0.0",
-  "dependencies": {
-    "sass-bootstrap": "~2.3.0",
-    "requirejs": "~2.1.4",
-    "modernizr": "~2.6.2",
-    "jquery": "~1.9.1"
-  },
-  "devDependencies": {}
+    "name": "gnot-es",
+    "version": "0.0.0",
+    "dependencies": {
+        "sass-bootstrap": "~2.3.0",
+        "requirejs": "~2.1.4",
+        "modernizr": "~2.6.2",
+        "backbone": "0.x.x",
+        "google-code-prettify": "1.x.x",
+        "lodash": "1.x.x",
+        "marked": "0.x.x",
+        "zepto": "*",
+        "coffee-script": "1.x.x"
+    },
+    "devDependencies": {}
 }

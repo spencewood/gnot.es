@@ -178,6 +178,7 @@ module.exports = function (grunt) {
                     useStrict: true,
                     wrap: true,
                     //uglify2: {} // https://github.com/mishoo/UglifyJS2
+                    stubModules: ['cs']
                 }
             }
         },

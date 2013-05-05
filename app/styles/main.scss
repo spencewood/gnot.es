@@ -2,8 +2,51 @@ $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 @import 'sass-bootstrap/lib/bootstrap';
+@import 'sons-of-obsidian.css';
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
+body{
+    background-color: #272b30;
+}
+
+#view{
+    color: #c8c8c8;
+}
+
+h1#title{
+    font-family: 'Fjalla One', sans-serif;
+    color: #82B3FF;
+}
+
+#toolbar{
+    background-image: url(../images/tool_bg.png);
+    height: 37px;
+    width: 100%;
+}
+
+#toolbar a{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+section{
+    margin: 20px 0;
+}
+
+section.container-fluid{
+    width: 960px;
+}
+
+// Source area
+.source-view{
+    overflow: hidden;
+}
+
+.source-view textarea{
+    width: 250px;
+}
+
+// Markdown view
+.output-view{
+    margin-top: 60px;
+    margin-left: 400px;
 }
