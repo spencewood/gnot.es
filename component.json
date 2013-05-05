@@ -9,8 +9,7 @@
         "google-code-prettify": "1.x.x",
         "lodash": "1.x.x",
         "marked": "0.x.x",
-        "zepto": "*",
-        "coffee-script": "1.x.x"
+        "zepto": "*"
     },
     "devDependencies": {}
 }

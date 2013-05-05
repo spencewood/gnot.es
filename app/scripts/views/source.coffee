@@ -6,9 +6,8 @@ define (require) ->
         initialize: (options) ->
             _.bindAll @
 
-            unless options.destination
-                throw 'Must pass in destination view'
-
+            throw 'Must pass in destination view' unless options.destination
+            
             @destination = options.destination
 
         events:
@@ -16,12 +15,10 @@ define (require) ->
             'paste': 'pasteEvent'
 
         pasteEvent: ->
-            setTimeout =>
-                @render()
-            , 0
+            _.defer @render
 
         keyupEvent: ->
-            @render()
+            _.defer @render
 
         render: ->
             @destination.render(@$el.val()).prettify()
