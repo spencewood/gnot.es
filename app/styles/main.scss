@@ -8,6 +8,8 @@ $dark: #272b30;
 
 body{
     background-color: whitesmoke;
+    padding-bottom: 40px;
+    padding-top: 50px;
 }
 
 .well{
@@ -18,4 +20,19 @@ body{
 #view{
     color: #333;
     overflow: hidden;
+}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+.sidebar-nav-fixed {
+    position:fixed;
+    top: 50px;
+    bottom: 20px;
+    width: 21.97%;
+}
+
+#source{
+    height: 100%;
 }

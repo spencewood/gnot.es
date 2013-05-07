@@ -16,22 +16,26 @@
         <!-- endbuild -->
     </head>
     <body>
-        <div class="navbar navbar-static-top">
+        <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
-                <a class="brand" href="#">gnot.es</a>
-                <ul class="nav">
-                    <li class="divider-vertical">
-                        <a href="#"><i class="icon-pencil"></i> save</a>
-                    </li>
-                </ul>
+                <div class="container-fluid">
+                    <a class="brand" href="#">gnot.es</a>
+                    <ul class="nav">
+                        <li class="divider-vertical">
+                            <a href="#"><i class="icon-pencil"></i> save</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="well pull-left">
-                    <textarea id="source" rows="20"></textarea>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3">
+                    <div class="sidebar-nav sidebar-nav-fixed">
+                        <textarea id="source"></textarea>
+                    </div>
                 </div>
-                <div class="well">
+                <div class="sidebar-nav">
                     <div id="view"></div>
                 </div>
             </div>
