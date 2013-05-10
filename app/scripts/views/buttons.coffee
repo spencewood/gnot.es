@@ -1,7 +1,7 @@
 define (require) ->
     _ = require 'underscore'
     Backbone = require 'backbone'
-    Gnot = require 'cs!models/gnot'
+    Gnote = require 'cs!models/gnote'
 
     Buttons = Backbone.View.extend
         initialize: ->
@@ -14,4 +14,4 @@ define (require) ->
             @save()
 
         save: ->
-            new Gnot(title: 'test').save()
+            new Gnote(title: 'test').save()
