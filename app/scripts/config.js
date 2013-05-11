@@ -6,6 +6,7 @@ require.config({
     paths: {
         cs: 'vendor/cs',
         'coffee-script': 'vendor/coffee-script',
+        tpl: 'vendor/tpl',
         underscore: '../components/lodash/lodash',
         backbone: '../components/backbone/backbone',
         zepto: '../components/zepto/zepto',

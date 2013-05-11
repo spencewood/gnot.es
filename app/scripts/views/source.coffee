@@ -6,19 +6,12 @@ define (require) ->
         initialize: (options) ->
             _.bindAll @
 
-            throw 'Must pass in destination view' unless options.destination
-            
-            @destination = options.destination
-
         events:
             'keyup': 'keyupEvent'
             'paste': 'pasteEvent'
 
         pasteEvent: ->
-            _.defer @render
+            Backbone.Events.trigger 'gnote:render', @$el.val()
 
         keyupEvent: ->
-            _.defer @render
-
-        render: ->
-            @destination.render(@$el.val()).prettify()
+            Backbone.Events.trigger 'gnote:render', @$el.val()

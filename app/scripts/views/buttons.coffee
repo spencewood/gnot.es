@@ -1,17 +1,12 @@
 define (require) ->
-    _ = require 'underscore'
     Backbone = require 'backbone'
-    Gnote = require 'cs!models/gnote'
+    SaveButton = require 'cs!views/buttons/save-button'
+    buttonsTemplate = require 'tpl!templates/buttons.tpl'
 
     Buttons = Backbone.View.extend
-        initialize: ->
-            _.bindAll @
+        render: ->
+            @$el.html buttonsTemplate()
+            @
 
-        events:
-            'click #save': 'saveEvent'
-
-        saveEvent: ->
-            @save()
-
-        save: ->
-            new Gnote(title: 'test').save()
+        bindViews: ->
+            new SaveButton(el: @$('.save'))

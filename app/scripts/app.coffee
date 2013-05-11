@@ -1,10 +1,8 @@
 define (require) ->
-    SourceView = require 'cs!views/source'
-    ButtonsView = require 'cs!views/buttons'
-    MarkdownView = require 'cs!views/markdown'
+    Source = require 'cs!views/source'
+    Buttons = require 'cs!views/buttons'
+    Markdown = require 'cs!views/markdown'
 
-    markdownView = new MarkdownView(el: '#view')
-    sourceView = new SourceView(el: '#source', destination: markdownView)
-    buttonsView = new ButtonsView(el: '#buttons')
-
-    buttonsView.render()
+    new Markdown(el: '#view')
+    new Source(el: '#source')
+    new Buttons(el: '#buttons').render().bindViews()

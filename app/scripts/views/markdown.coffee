@@ -4,9 +4,13 @@ define (require) ->
     prettify = require 'prettify'
 
     Markdown = Backbone.View.extend
+        initialize: ->
+            Backbone.Events.on 'gnote:render', @render, @
+            Backbone.Events.on 'gnote:render', @prettify, @
+
         render: (source) ->
             @el.innerHTML = marked source or ''
-            Backbone.Events.trigger 'markdown:rendered'
+            Backbone.Events.trigger 'gnote:rendered'
             @
 
         prettify: ->
